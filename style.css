@@ -1,0 +1,269 @@
+/* PRINCIPAL */
+:root {
+    --color1: #D89584;
+    --color2: #ffff;
+    --color3: #00000040;
+    --color4: #f4f4f4;
+    --colorSection: rgb(102, 100, 100);
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    overflow: auto;
+   font-family: var(--font);
+}
+
+
+body {
+    margin: 0;
+}
+
+
+/* COVER PAGE */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_profile {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 2px solid var(--color2);
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 640px) {
+    .image_profile {
+        margin-top: 90px;
+
+    }
+
+}
+
+div.cover {
+    background: url(images/cover_overlay.png) no-repeat center/100% 100%, url(images/cover.jpg) no-repeat center/cover;
+    height: 420px;
+    position: relative;
+}
+
+
+h1,
+p {
+    color: var(--color2);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+
+    h1,
+    p {
+        margin-top: 9px;
+    }
+}
+
+.title_cover {
+    color: lightgray;
+    margin-top: 7px;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+div.cover-contact {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    border-left: 4px solid var(--color1);
+    padding-left: 9px;
+}
+
+div.cover-contact p {
+    text-align: left;
+}
+
+div.cover-contact a {
+    color: var(--color2);
+    font-size: 15px;
+}
+
+
+a.contact {
+    border: 3px solid var(--color1);
+    padding: 8px 10px;
+    background-color: var(--color3);
+    color: var(--color1);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+a.contact:hover {
+
+    color: var(--color2);
+    border: 3px solid var(--color2);
+}
+
+@media screen and (max-width: 640px) {
+
+    a.contact {
+        font-size: 15px;
+    }
+}
+
+
+/* SECTIONS */
+
+
+.section {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border: none;
+    overflow: auto;
+}
+
+hr{
+   width: 20%;
+   height: 1px;
+   background-color:var(--colorSection);
+   margin-bottom: 25px;
+
+}
+.section-grise1 {
+    background: url(images/triangle2white.svg) no-repeat center bottom/100%;
+    background-color: var(--color4);
+    padding-bottom: 140px;
+}
+.section-grise1 p {
+    text-align: center;
+    color: var(--colorSection);
+    font-size: 18px;
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-grise2 {
+    background: url(images/triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--color4);
+    padding-top: 90px;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+
+
+/* PARTIE EN SAVOIR PLUS */
+
+
+h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: rgb(48, 46, 46);
+
+}
+
+p {
+    color: rgb(37, 36, 36);
+    margin-bottom: 20px;
+}
+
+a{
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.logos {
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+}
+.text{
+    float: right;
+    text-align: center;
+    color: rgb(48, 45, 45);
+    margin:30px 10px 10px 10px;
+}
+
+
+.section2{
+    flex-direction: row;
+}
+
+
+@media screen and  (max-width: 692px) {
+
+   
+   .logos img {
+       width: 67px;
+       height: 67px;
+   }
+  
+}
+
+
+@media screen and  (max-width: 1478px) {
+
+    .section2{
+        flex-direction: column;
+    }
+   .logos{
+       width: 100%;
+   }
+   .text{
+       width: 100%;;
+   }
+}
+
+
+p.vertical_lign{
+    margin-top: 10px;
+    border-left:4px solid var(--color1) ;
+    padding-left: 9px;
+
+}
+
+
+/* Portfolio */
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+
+.project-card {
+   
+    padding: 2%;
+    flex-direction: column;
+    text-align: center;
+  
+
+  
+}
+
+.project-image img{
+    max-width: 100%;
+}
+
+.project-info{
+    justify-content: center;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+}
