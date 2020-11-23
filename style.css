@@ -261,7 +261,12 @@ p.vertical_lign{
 .project-info{
     justify-content: center;
 }
-
+h5{
+    font-size: 16px;
+}
+h6{
+    font-size: 12px;
+}
 /* FOOTER */
 
 .footer {
